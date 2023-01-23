@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{025C5DF8-F861-40B1-A44C-5EC9C25C58C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>MYFIRM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MYFIRM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MYFIRM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CashboxdatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CashboxdatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.vb">
+      <DependentUpon>Form10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.vb">
+      <DependentUpon>Form11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form11.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.Designer.vb">
+      <DependentUpon>Form12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form12.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13.Designer.vb">
+      <DependentUpon>Form13.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form13.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14.Designer.vb">
+      <DependentUpon>Form14.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form14.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form15.Designer.vb">
+      <DependentUpon>Form15.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form15.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form16.Designer.vb">
+      <DependentUpon>Form16.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form16.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form17.Designer.vb">
+      <DependentUpon>Form17.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form17.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form18.Designer.vb">
+      <DependentUpon>Form18.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form18.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form19.Designer.vb">
+      <DependentUpon>Form19.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form19.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form20.Designer.vb">
+      <DependentUpon>Form20.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form20.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form21.Designer.vb">
+      <DependentUpon>Form21.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form21.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form22.Designer.vb">
+      <DependentUpon>Form22.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form22.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form23.Designer.vb">
+      <DependentUpon>Form23.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form23.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form24.Designer.vb">
+      <DependentUpon>Form24.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form24.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form25.Designer.vb">
+      <DependentUpon>Form25.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form25.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.vb">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.vb">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.vb">
+      <DependentUpon>Form8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.vb">
+      <DependentUpon>Form9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="House202ADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>House202ADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="House202BDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>House202BDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="House303ADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>House303ADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="House303BDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>House303BDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="House404ADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>House404ADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="House505ADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>House505ADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="House505BDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>House505BDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerpinDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagerpinDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyRecordsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyRecordsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewHouse101ADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewHouse101ADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewHouse101BDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewHouse101BDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewHouse101CDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewHouse101CDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OfficerpinDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OfficerpinDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReceptionistpinDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReceptionistpinDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TenantInformationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TenantInformationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacant101ADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vacant101ADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacant101BDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vacant101BDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacant101CDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vacant101CDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacant202ADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vacant202ADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacant303ADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vacant303ADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacant303BDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vacant303BDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacant404ADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vacant404ADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacant505ADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vacant505ADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacant505BDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vacant505BDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VacantB202DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacantB202DataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13.resx">
+      <DependentUpon>Form13.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14.resx">
+      <DependentUpon>Form14.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form15.resx">
+      <DependentUpon>Form15.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form16.resx">
+      <DependentUpon>Form16.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form17.resx">
+      <DependentUpon>Form17.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form18.resx">
+      <DependentUpon>Form18.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form19.resx">
+      <DependentUpon>Form19.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form20.resx">
+      <DependentUpon>Form20.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form21.resx">
+      <DependentUpon>Form21.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form22.resx">
+      <DependentUpon>Form22.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form23.resx">
+      <DependentUpon>Form23.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form24.resx">
+      <DependentUpon>Form24.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form25.resx">
+      <DependentUpon>Form25.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CashboxdatabaseDataSet.xsc">
+      <DependentUpon>CashboxdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CashboxdatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CashboxdatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CashboxdatabaseDataSet.xss">
+      <DependentUpon>CashboxdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House202ADataSet.xsc">
+      <DependentUpon>House202ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House202ADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>House202ADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="House202ADataSet.xss">
+      <DependentUpon>House202ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House202BDataSet.xsc">
+      <DependentUpon>House202BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House202BDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>House202BDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="House202BDataSet.xss">
+      <DependentUpon>House202BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House303ADataSet.xsc">
+      <DependentUpon>House303ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House303ADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>House303ADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="House303ADataSet.xss">
+      <DependentUpon>House303ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House303BDataSet.xsc">
+      <DependentUpon>House303BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House303BDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>House303BDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="House303BDataSet.xss">
+      <DependentUpon>House303BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House404ADataSet.xsc">
+      <DependentUpon>House404ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House404ADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>House404ADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="House404ADataSet.xss">
+      <DependentUpon>House404ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House505ADataSet.xsc">
+      <DependentUpon>House505ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House505ADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>House505ADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="House505ADataSet.xss">
+      <DependentUpon>House505ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House505BDataSet.xsc">
+      <DependentUpon>House505BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="House505BDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>House505BDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="House505BDataSet.xss">
+      <DependentUpon>House505BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerpinDataSet.xsc">
+      <DependentUpon>ManagerpinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerpinDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ManagerpinDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ManagerpinDataSet.xss">
+      <DependentUpon>ManagerpinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="MyRecordsDataSet.xsc">
+      <DependentUpon>MyRecordsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyRecordsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyRecordsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyRecordsDataSet.xss">
+      <DependentUpon>MyRecordsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TenantInformationDataSet.xsc">
+      <DependentUpon>TenantInformationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TenantInformationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TenantInformationDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TenantInformationDataSet.xss">
+      <DependentUpon>TenantInformationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant101ADataSet.xsc">
+      <DependentUpon>Vacant101ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant101ADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vacant101ADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vacant101ADataSet.xss">
+      <DependentUpon>Vacant101ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant101BDataSet.xsc">
+      <DependentUpon>Vacant101BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant101BDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vacant101BDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vacant101BDataSet.xss">
+      <DependentUpon>Vacant101BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant101CDataSet.xsc">
+      <DependentUpon>Vacant101CDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant101CDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vacant101CDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vacant101CDataSet.xss">
+      <DependentUpon>Vacant101CDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant202ADataSet.xsc">
+      <DependentUpon>Vacant202ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant202ADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vacant202ADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vacant202ADataSet.xss">
+      <DependentUpon>Vacant202ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant303ADataSet.xsc">
+      <DependentUpon>Vacant303ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant303ADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vacant303ADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vacant303ADataSet.xss">
+      <DependentUpon>Vacant303ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant303BDataSet.xsc">
+      <DependentUpon>Vacant303BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant303BDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vacant303BDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vacant303BDataSet.xss">
+      <DependentUpon>Vacant303BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant404ADataSet.xsc">
+      <DependentUpon>Vacant404ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant404ADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vacant404ADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vacant404ADataSet.xss">
+      <DependentUpon>Vacant404ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant505ADataSet.xsc">
+      <DependentUpon>Vacant505ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant505ADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vacant505ADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vacant505ADataSet.xss">
+      <DependentUpon>Vacant505ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant505BDataSet.xsc">
+      <DependentUpon>Vacant505BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vacant505BDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vacant505BDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vacant505BDataSet.xss">
+      <DependentUpon>Vacant505BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VacantB202DataSet.xsc">
+      <DependentUpon>VacantB202DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VacantB202DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacantB202DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VacantB202DataSet.xss">
+      <DependentUpon>VacantB202DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewHouse101ADataSet.xsc">
+      <DependentUpon>NewHouse101ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewHouse101ADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewHouse101ADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NewHouse101ADataSet.xss">
+      <DependentUpon>NewHouse101ADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewHouse101BDataSet.xsc">
+      <DependentUpon>NewHouse101BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewHouse101BDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewHouse101BDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NewHouse101BDataSet.xss">
+      <DependentUpon>NewHouse101BDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewHouse101CDataSet.xsc">
+      <DependentUpon>NewHouse101CDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewHouse101CDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewHouse101CDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NewHouse101CDataSet.xss">
+      <DependentUpon>NewHouse101CDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OfficerpinDataSet.xsc">
+      <DependentUpon>OfficerpinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OfficerpinDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OfficerpinDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OfficerpinDataSet.xss">
+      <DependentUpon>OfficerpinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceptionistpinDataSet.xsc">
+      <DependentUpon>ReceptionistpinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceptionistpinDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReceptionistpinDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReceptionistpinDataSet.xss">
+      <DependentUpon>ReceptionistpinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\435808343_332216.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cashboxdatabase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="House202A.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="House202B.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="House303A.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="House303B.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="House404A.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="House505A.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="House505B.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Managerpin.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MyRecords.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NewHouse101A.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NewHouse101B.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NewHouse101C.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Officerpin.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Receptionistpin.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\806028023_260967.jpg" />
+    <None Include="Resources\400026900145_182038.jpg" />
+    <None Include="Resources\806120312_326601.jpg" />
+    <None Include="Resources\400040800258_173232.jpg" />
+    <None Include="Resources\806118932_324789.jpg" />
+    <None Include="Resources\240583_Autumn.jpg" />
+    <None Include="Resources\447805698_665351.jpg" />
+    <None Include="Resources\447815108_65435.jpg" />
+    <None Include="Resources\447810588_66344.jpg" />
+    <None Include="Resources\449008362_418340.jpg" />
+    <None Include="Resources\447819184_41355.jpg" />
+    <None Include="Resources\400040800129_149752.jpg" />
+    <None Include="Resources\455011203_377227.jpg" />
+    <None Include="Resources\455023150_377854.jpg" />
+    <None Include="Resources\455208869_334672.jpg" />
+    <None Include="Resources\455208914_301775.jpg" />
+    <None Include="Resources\447807876_66290.jpg" />
+    <None Include="Resources\447813810_66313.jpg" />
+    <None Include="Resources\449012675_452692.jpg" />
+    <None Include="Resources\455024229_377649.jpg" />
+    <None Include="Resources\455224848_452149.jpg" />
+    <None Include="Resources\449016646_420599.jpg" />
+    <None Include="Resources\455207744_334158.jpg" />
+    <None Include="Resources\264415286_2171641.jpg" />
+    <None Include="Resources\257909113_345339.jpg" />
+    <None Include="Resources\IMG_20200812_1658281.jpg" />
+    <None Include="Resources\IMG_20200812_1658541.jpg" />
+    <None Include="Resources\IMG_20200812_1659391.jpg" />
+    <None Include="Resources\IMG_20200812_170049.jpg" />
+    <None Include="Resources\IMG_20200812_165934.jpg" />
+    <None Include="Resources\IMG_20200812_165942.jpg" />
+    <None Include="Resources\248211172_70083.jpg" />
+    <None Include="Resources\806120488_323110.jpg" />
+    <None Include="Resources\806120312_3266011.jpg" />
+    <Content Include="TenantInformation.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vacant101A.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vacant101B.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vacant101C.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vacant202A.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vacant303A.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vacant303B.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vacant404A.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vacant505A.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vacant505B.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VacantB202.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\264339766_187881.jpg" />
+    <None Include="Resources\447805698_66535.jpg" />
+    <None Include="Resources\264415286_217164.jpg" />
+    <None Include="Resources\594253_Mechanical.jpg" />
+    <None Include="Resources\542659_Gift of love HelloRF.jpg" />
+    <None Include="Resources\400016100793_282832.jpg" />
+    <None Include="Resources\400018600403_280957.jpg" />
+    <None Include="Resources\400019100808_280514.jpg" />
+    <None Include="Resources\544732_Light bulb art HelloRF.jpg" />
+    <None Include="Resources\240390_Architecture 8.jpg" />
+    <None Include="Resources\IMG_20200812_165939.jpg" />
+    <None Include="Resources\IMG_20200812_170055.jpg" />
+    <None Include="Resources\IMG_20200812_165854.jpg" />
+    <None Include="Resources\IMG_20200812_165808.jpg" />
+    <None Include="Resources\257010713_238727.jpg" />
+    <None Include="Resources\257117989_288685.jpg" />
+    <None Include="Resources\IMG_20200812_165828.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
