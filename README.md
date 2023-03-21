@@ -1,4 +1,4 @@
-# RENTAL-MANAGEMENT-DESKTOP-APP
+Hu# RENTAL-MANAGEMENT-DESKTOP-APP
 A desktop application done in vb.net using ACCESS for the database to manage rental colleCtion in real-estates
 <div>
   <a href="https://github.com/Dalton-47/RENTAL-MANAGEMENT-DESKTOP-APP">
@@ -8,6 +8,7 @@ A desktop application done in vb.net using ACCESS for the database to manage ren
           With real-time updates and streamlined processes, our system ensures that you can quickly identify issues and take appropriate action, 
           while also providing a convenient and user-friendly UI experience for  our end users.</p>
           </div>
+Data Page
          
 ![Rental Management UI](https://github.com/Dalton-47/Dalton-47/blob/main/SYSTEM11.PNG)
           
